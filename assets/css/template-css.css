@@ -7,3 +7,49 @@
 *::after {
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+.nav-bar {
+    background: pink;
+}
+
+.main-body-section {
+    background: skyblue;
+}
+
+.footer-section {
+    background: indianred;
+}
+
+.main_grid {
+    display: grid;
+    grid-template-areas:
+    "header main main main main"
+    "header main main main main"
+    "header main main main main"
+    "header footer footer footer footer";
+}
+
+.nav-bar {grid-area: header;}
+.main_grid {grid-area: main;}
+.footer-section {grid-area: footer}
+
+.main-body-section {
+    display: grid;
+    grid-template-areas:
+    "about about about"
+    "studies profesional demos";
+}
+
+.about-card {grid-area: about;}
+.professional-card {grid-area: profesional;}
+.studies-card {grid-area: studies;}
+.demos-card {grid-area: demos;}
