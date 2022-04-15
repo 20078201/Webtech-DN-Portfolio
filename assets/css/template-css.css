@@ -11,45 +11,100 @@
 body {
     min-height: 100vh;
     min-width: 100vh;
+    background-color: #343434;
+    color: white;
+    /*border: 3px solid pink;*/
 }
 
-img {
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- main grid creation --- */
+.parent_grid {
+    height: 100vh;
+}
+
+.parent_grid {
+    display: grid;
+    grid-template-columns: 6% auto auto auto;
+    grid-template-rows: auto auto 10%;
+    grid-template-areas:
+    "sidebar main main main "
+    "sidebar main main main "
+    "sidebar footer footer footer ";
+}
+
+.nav-bar {grid-area: sidebar;}
+.main_grid {grid-area: main;}
+.footer-section {grid-area: footer;}
+
+/* --- main grid creation ends here --- */
+
+/*navbar*/
+.nav-bar {
+    padding: 2em;
+    /*background: #343434;*/
+    position: sticky;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    /*border: 3px solid pink;*/
+    background: skyblue;
     width: 100%;
 }
 
-.nav-bar {
-    background: pink;
+.nav {
+    flex-grow: 1;
+    /*border: 3px solid pink;*/
+    align-self: center;
 }
 
-.main-body-section {
-    background: skyblue;
+.nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 4em;
+    justify-content: center;
 }
 
-.footer-section {
+.nav-link {
+    align-self: center;
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+}
+
+.D-styles {
+    font-size: 7rem;
+    color: #FFC600;
+}
+
+.T-styles {
+    align-self: end;
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+}
+/*navbar end*/
+
+/*main content begins*/
+.main_grid {
     background: indianred;
 }
 
-.main_grid {
-    display: grid;
-    grid-template-areas:
-    "header main main main main"
-    "header main main main main"
-    "header main main main main"
-    "header footer footer footer footer";
+.footer-section {
+    background: darkseagreen;
 }
-
-.nav-bar {grid-area: header;}
-.main_grid {grid-area: main;}
-.footer-section {grid-area: footer}
-
-.main-body-section {
-    display: grid;
-    grid-template-areas:
-    "about about about"
-    "studies profesional demos";
-}
-
-.about-card {grid-area: about;}
-.professional-card {grid-area: profesional;}
-.studies-card {grid-area: studies;}
-.demos-card {grid-area: demos;}
