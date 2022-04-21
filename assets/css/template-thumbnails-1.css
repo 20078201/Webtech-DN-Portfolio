@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@300&display=swap');
+
+:root {
+    --border-radius: 1rem;
+    --nav-link-color: white;
+    --black-color: #242424;
+    --orange-color: #FF7600;
+}
+
+/* ------------------ Box sizing rules ------------------------------------------ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ------------------ Box sizing rules ends ------------------------------------------ */
+
+body {
+    background-color: white;
+    font-family: "Inter", "sans-serif";
+}
+
+/* ------------------ a links ------------------------------------------ */
+a {
+    color: black;
+}
+a:hover {
+    color: var(--orange-color);
+    text-decoration: underline;
+}
+
+/* ------------------ a links ------------------------------------------ */
+
+/* ------------------ resetting Img width property ------------------------------------------ */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+/* ------------------ resetting Img width property ------------------------------------------ */
+
+/* ------------------------------------- parent grid creation starts here ------------------------------------------- */
+.parent_grid{
+    display: grid;
+    grid-template-columns: auto;
+    /*grid-template-rows: 10% 50% 10%;*/
+
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+}
+
+/* ----------------------------------- parent grid creation ends here --------------------------------------- */
+
+
+/* -------------------------------------- navbar Begins -------------------------------------------------------*/
+.nav-bar {
+    background: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: +1;
+}
+
+.nav-link {
+    margin-left: 2rem;
+
+}
+
+.nav-bar > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    align-self: center;
+    margin-top: -10px;
+    /*margin-left: 1rem;*/
+}
+
+.D-styles {
+    font-size: 7rem;
+    color: var(--orange-color);
+}
+/* ----------------------------------------------- navbar end ------------------------------------------------*/
+
+/* ------------------------------------- main grid creation starts here ------------------------------------*/
+/*.main-content{*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, auto);*/
+/*    grid-template-rows: repeat(2, auto);*/
+
+/*    grid-template-areas:*/
+/*    "main-1 main-1 main-1"*/
+/*    "main-1 main-1 main-1";*/
+
+/*    gap: 0.75rem;*/
+/*}*/
+
+/* ----------------------------------- main grid creation ends here --------------------------------------- */
+
+
+/* --------------------------------------------- main content begins ---------------------------------------- */
+.footer {grid-area: footer;}
+.nav-bar {grid-area: nav;}
+.main-content {
+    grid-area: main;
+    min-height: 100vh;
+}
+
+.circle-thumbnail-size-normal {
+    height: 98px;
+    width: 98px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.circle-thumbnail-size-small{
+    height: 48px;
+    width: 48px;
+    background: grey;
+    border-radius: 50%;
+    border: 3px solid red;
+}
+
+.circle-thumbnail-size-large {
+    height: 192px;
+    width: 192px;
+    background: grey;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,0.25);
+}
+
+.rounded-square-thumbnail-size-normal {
+    height: 98px;
+    width: 98px;
+    background: grey;
+    border-radius: 10%;
+}
+
+.rounded-square-thumbnail-size-small{
+    height: 48px;
+    width: 48px;
+    background: grey;
+    border-radius: 10%;
+}
+
+.rounded-square-thumbnail-size-large {
+    height: 192px;
+    width: 192px;
+    background: grey;
+    border-radius: 10%;
+}
+
+
+
+
+.main-content > div {
+    display: inline-block;
+    margin: 1em;
+
+}
+
+
+/* --------------------------------------------- main content Ends ---------------------------------------- */
+
+/* --------------------------------------------- Footer content begins ---------------------------------------- */
+.footer {
+    display: flex;
+}
+
+.footer-nav {
+    flex-grow: 1;
+    height: 100%;
+    /*background: yellow;*/
+}
+
+.footer-nav-links {
+    margin-top: 16px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+/* --------------------------------------------- Footer content Ends ---------------------------------------- */
