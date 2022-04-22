@@ -17,17 +17,10 @@
 /* ------------------ Box sizing rules ends ------------------------------------------ */
 
 body {
-    /*min-height: 100vh;*/
-    /*min-width: 100vh;*/
     background-color: white;
     color: black;
     font-family: "Inter", "sans-serif";
-    /*border: 3px solid pink;*/
-}
 
-.parent_grid {
-    min-height: 100vh;
-    min-width: 100vh;
 }
 
 
@@ -56,7 +49,7 @@ picture {
 .parent_grid{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10vh auto auto;
+    grid-template-rows: 10vh 90vh auto;
 
     grid-template-areas:
     "nav"
@@ -109,7 +102,7 @@ picture {
 .main-content{
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 50% auto;
 
     grid-template-areas:
     "main-1 main-1 main-1"
@@ -122,21 +115,13 @@ picture {
 
 
 /* --------------------------------------------- main content begins ---------------------------------------- */
-.about {
-    grid-area: main-1;
-}
+.about {grid-area: main-1;}
 .study {grid-area: main-2}
 .professional {grid-area: main-3}
 .demos {grid-area: main-4}
 .footer {grid-area: footer;}
-.nav-bar {
-    grid-area: nav;
-    height: 100%;
-}
-.main-content {
-    grid-area: main;
-    min-height: 100vh;
-}
+.nav-bar {grid-area: nav;}
+.main-content {grid-area: main;}
 
 .about > header {
     background: rgba(0, 0, 0, 75%);
