@@ -56,7 +56,7 @@ picture {
 .parent_grid{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 15vh auto auto;
 
     grid-template-areas:
     "nav"
@@ -129,7 +129,10 @@ picture {
 .professional {grid-area: main-3}
 .demos {grid-area: main-4}
 .footer {grid-area: footer;}
-.nav-bar {grid-area: nav}
+.nav-bar {
+    grid-area: nav;
+    height: 100%;
+}
 .main-content {
     grid-area: main;
     min-height: 100vh;

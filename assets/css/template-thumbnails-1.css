@@ -44,13 +44,14 @@ picture {
 .parent_grid{
     display: grid;
     grid-template-columns: auto;
-    /*grid-template-rows: 10% 50% 10%;*/
+    grid-template-rows: 15vh auto auto;
 
     grid-template-areas:
     "nav"
     "main"
     "footer";
 }
+
 
 /* ----------------------------------- parent grid creation ends here --------------------------------------- */
 
@@ -162,8 +163,68 @@ picture {
     border-radius: 10%;
 }
 
+.square-small {
+    width: 48px;
+    height: 48px;
+    margin: 25px;
+    background: grey;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+    border-radius: 12%;
+}
 
+.diamond-small {
+    width: 98px;
+    height: 98px;
+    margin: -25px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
+.square-normal {
+    width: 98px;
+    height: 98px;
+    margin: 25px;
+    background: grey;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+    border-radius: 12%;
+}
+
+.diamond-normal {
+    width: 148px;
+    height: 148px;
+    margin: -25px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.square-large {
+    width: 192px;
+    height: 192px;
+    margin: 25px;
+    background: grey;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+    border-radius: 12%;
+}
+
+.diamond-large {
+    width: 242px;
+    height: 242px;
+    margin: -25px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
 .main-content > div {
     display: inline-block;
