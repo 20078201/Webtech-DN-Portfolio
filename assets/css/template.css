@@ -56,7 +56,7 @@ picture {
 .parent_grid{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 15vh auto auto;
+    grid-template-rows: 10vh auto auto;
 
     grid-template-areas:
     "nav"
