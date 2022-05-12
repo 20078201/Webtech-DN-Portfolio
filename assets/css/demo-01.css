@@ -89,7 +89,6 @@ picture {
     position: relative;
     align-self: center;
     margin-top: -10px;
-    /*margin-left: 1rem;*/
 }
 
 .D-styles {
@@ -102,7 +101,50 @@ picture {
 /* --------------------------------------------- main content begins ---------------------------------------- */
 .footer {grid-area: footer;}
 .nav-bar {grid-area: nav;}
-.main-content {grid-area: main;}
+.main-content {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 50%;
+    /*overflow: hidden;*/
+    position: relative;
+
+}
+
+.card_header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #cccccc;
+    display: flex;
+    justify-content: center;
+}
+
+.card_content {
+    background-color: rgba(23, 0, 11, 0.5);
+    width: 100%;
+    padding: 1rem;
+    color: antiquewhite;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card_footer {
+    background-color: rgba(0, 16, 24, 0.75);
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #cccccc;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* --------------------------------------------- main content Ends ---------------------------------------- */

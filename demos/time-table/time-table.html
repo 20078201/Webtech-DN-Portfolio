@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/assets/css/css-reset-Normalise.css">
     <link rel="stylesheet" href="/assets/css/demo-01.css">
 
-    <title>Template</title>
+    <script src="/assets/js/demo-01.js" defer></script>
+    <title>Time Table</title>
 </head>
 <body>
 <div class="parent_grid">
@@ -29,13 +30,27 @@
     <!-- Main Section -->
     <main class="main-content">
         <div class="card">
-            <header class="card_header">Lorem ipsum dolor sit amets.</header>
-            <div class="card_content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci architecto at corporis,
-                et id impedit itaque labore maiores molestias natus nemo, numquam quas quisquam quo, repellat similique.
-                Distinctio, in!
+            <header class="card_header">
+                <select id="selectNumber" onchange="changeTimeTable()" >
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                Times Table
+            </header>
+            <div id="card_content" class="card_content">
+                <p>“000 x 000 = 000000"</p>
             </div>
-            <footer class="card_footer">This is by author Dat Ngo</footer>
+            <footer class="card_footer"><a href="/demos/index.html">Return</a></footer>
         </div>
     </main>
 

@@ -18,5 +18,6 @@ This template uses ideas from Adrian Gould
 <adrian.gould@nmtafe.wa.edu.au> and others. Links to the other
 inspirations are shown below:
 
-- Site Name:
-- Site Name:
+- Site Name: https://www.w3schools.com/howto/howto_js_dropdown.asp
+- Site Name: https://ricardometring.com/getting-the-value-of-a-select-in-javascript
+- Site Name: 
