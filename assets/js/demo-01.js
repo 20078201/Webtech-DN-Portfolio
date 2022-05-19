@@ -13,7 +13,6 @@ function multiply(num1, num2) {
     return String(num1 * num2)
 }
 
-
 function changeTimeTable(){
     let select = document.getElementById("selectNumber")
     let value = select.options[select.selectedIndex].value
@@ -27,7 +26,7 @@ function changeTimeTable(){
     text = ""
 }
 
-changeTimeTable()
+// changeTimeTable()
 
 
 
