@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/css-reset-Normalise.css">
     <link rel="stylesheet" href="/assets/css/demo-02.css">
 
-    <script src="/assets/js/demo-01.js" defer></script>
+    <script src="/assets/js/demo-02.js" defer></script>
     <title>Birthday calculator 🎂🎂</title>
 </head>
 <body>
@@ -34,7 +34,8 @@
                 <h2>Birthday Calculator</h2>
             </header>
             <main id="card_content" class="card_content">
-                <form action="">
+                <h3>Please enter your birthday</h3>
+                <form action="#">
                     <div class="day">
                         <label for="Day">Day
                             <select id="Day">
@@ -129,11 +130,14 @@
                             </select>
                         </label>
                     </div>
+
+                    <button type="button" id="calculate">Calculate</button>
                 </form>
+
             </main>
-            <footer class="card_footer">
-                <p>You are YY years, MM months and DD days young</p>
-                <p>NNN days until your birthday</p>
+            <footer id="card_footer" class="card_footer">
+                <p id="age">You are YY years, MM months and DD days young</p>
+                <p id="daysLeftTillBirthday">NNN days until your birthday</p>
             </footer>
         </div>
     </main>
