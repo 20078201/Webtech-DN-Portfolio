@@ -128,21 +128,19 @@ picture {
 .card_content {
     background-color: rgba(23, 0, 11, 0.5);
     width: 100%;
-    padding: 1rem;
+    padding: 2.5rem;
     color: antiquewhite;
     font-size: 2rem;
     display: flex;
     justify-content: center;
 }
-
 .card_footer {
     background-color: rgba(0, 16, 24, 0.75);
     width: 100%;
     font-size: 1.5rem;
     padding: 1rem;
     color: #cccccc;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 

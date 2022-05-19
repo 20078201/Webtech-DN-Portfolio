@@ -20,4 +20,5 @@ inspirations are shown below:
 
 - Site Name: https://www.w3schools.com/howto/howto_js_dropdown.asp
 - Site Name: https://ricardometring.com/getting-the-value-of-a-select-in-javascript
+- Site Name: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
 - Site Name: 
