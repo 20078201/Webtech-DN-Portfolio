@@ -26,6 +26,6 @@ inspirations are shown below:
 - Site Name: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
 - Site Name: https://www.codegrepper.com/code-examples/javascript/round+of+2+decimal+places+in+javascript
 - Site Name: https://www.geeksforgeeks.org/how-to-calculate-days-left-until-next-christmas-using-javascript/
-- Site Name: 
+- Site Name: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 - Site Name: 
 - Site Name: 

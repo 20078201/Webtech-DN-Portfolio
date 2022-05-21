@@ -7,9 +7,32 @@
 *
 * */
 let footerContent = document.getElementById("card_footer")
-
 let age = document.getElementById("age")
 let days = document.getElementById("daysLeftTillBirthday")
+
+const greetings = {
+    English: 'Happy Birthday',
+    French: 'Joyeux anniversaire!',
+    German: 'Alles Gute zum Geburtstag!',
+    Italian: 'Buon compleanno!',
+    Welsh: 'Penblwydd hapus!',
+    Klingon: 'qoSlIj DatIvjaj',
+    Bulgarian: 'Chestit Rozhden den!',
+    Chinese: 'Shēngrì kuàilè!',
+    Danish: 'Tillykke med fødselsdagen!',
+    Finnish: 'Hyvää syntymäpäivää!',
+    Hindi: 'janmadin mubaarak!',
+    Japanese: 'Otanjōbiomedetōgozaimasu!',
+    Persian: 'تولدت مبارک!'
+}
+
+const list_of_languages = ["English", 'French', 'German', 'Italian','Welsh', 'Klingon', 'Bulgarian',
+                        'Chinese', 'Danish', 'Finnish', 'Hindi', 'Japanese', 'Persian']
+
+// mdn wed doc generating random numbers
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
 button = document.getElementById("calculate")
 
@@ -51,10 +74,28 @@ button.addEventListener('click', () => {
 
     // Verification of the date the user entered (leap year etc)
 
-    if (currentMonth === birthdayMonth && currentDay === birthdayDay){
-        footerContent.innerText = "Happy Birthday! 🎂"
+    // 30 days month
+
+    // 31 days month
+
+    // 28 day month
+        // if the current year is divisible by 4 or a leap year
+
+
+
+    if (currentMonth === birthdayMonth+1 && currentDay === birthdayDay){
+        const index = getRandomInt(list_of_languages.length)
+        const lang = list_of_languages[index]
+        for (let greet in greetings){
+            if (greet === lang){
+                footerContent.innerText = `[${lang}]` + ' ' + greetings[greet]
+                return
+            }
+        }
     }
-    
+
+    // If the user birthday is not today run the code below
+
     if (today > upcomingBDay){
         upcomingBDay.setFullYear(today.getFullYear() + 1)
     }
@@ -87,8 +128,11 @@ button.addEventListener('click', () => {
         ageYear--
     }
 
-    age.innerText = `You are ${ageYear} years, ${ageMonth} months and ${ageDays} days young`
-    days.innerText = `${remainingDaysTillBirthday} days until your birthday`
+    let age = `You are ${ageYear} years, ${ageMonth} months and ${ageDays} days young`
+    let innerText = `${remainingDaysTillBirthday} days until your birthday`
+
+    footerContent.innerText = `${age} \n\n ${innerText}`
+    
 
 })
 
