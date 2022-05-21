@@ -34,25 +34,55 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-button = document.getElementById("calculate")
+let day = document.getElementById("Day")
 
-button.addEventListener('click', () => {
-    let day = document.getElementById("Day")
+let month = document.getElementById("Month")
+
+let year = document.getElementById("Year")
+
+let monthDropDown = document.getElementById("Month")
+let yearDropDown = document.getElementById("Year")
+
+monthDropDown.addEventListener("change", () => {
+    day.options[30].disabled=false
+    day.options[29].disabled=false
+    day.options[28].disabled=false
+
+    let monthValue = month.options[month.selectedIndex].value
+    let yearValue = year.options[year.selectedIndex].value
     let dayValue = day.options[day.selectedIndex].value
 
-    let month = document.getElementById("Month")
-    let monthValue = month.options[month.selectedIndex].value
-
-    let year = document.getElementById("Year")
-    let yearValue = year.options[year.selectedIndex].value
-
-    let remainder = yearValue%4
-
-    if (remainder === 0 && monthValue === 2){
-        footerContent.innerText = "Feb has 29 days during a leap"
-        return
+    if (monthValue === "4" || monthValue === "6" || monthValue === "9" || monthValue === "11"){
+        day.options[30].disabled=true
+        if (dayValue === "31"){
+            day.selectedIndex = "29"
+        }
     }
-    console.log(yearValue % 4, monthValue)
+    else if (monthValue === "2" && parseInt(yearValue)%4 === 0){
+        day.options[30].disabled=true
+        day.options[29].disabled=true
+        if (dayValue === "31" || dayValue === "30"){
+            day.selectedIndex = "28"
+        }
+    }
+    else if (monthValue === "2"){
+        day.options[30].disabled=true
+        day.options[29].disabled=true
+        day.options[28].disabled=true
+        if (dayValue === "31" || dayValue === "30" || dayValue === "29"){
+            day.selectedIndex = "27"
+        }
+    }
+
+})
+
+const button = document.getElementById("calculate")
+
+button.addEventListener('click', () => {
+    let yearValue = year.options[year.selectedIndex].value
+    let monthValue = month.options[month.selectedIndex].value
+    let dayValue = day.options[day.selectedIndex].value
+
     // Time object for current date
     let today = new Date()
 
@@ -74,14 +104,11 @@ button.addEventListener('click', () => {
 
     // Verification of the date the user entered (leap year etc)
 
-    // 30 days month
+    // 30 days month (April, June, September, November)
 
-    // 31 days month
-
-    // 28 day month
-        // if the current year is divisible by 4 or a leap year
-
-
+    let monthInt = parseInt(monthValue)
+    let dayInt = parseInt(dayValue)
+    let yearInt = parseInt(yearValue)
 
     if (currentMonth === birthdayMonth+1 && currentDay === birthdayDay){
         const index = getRandomInt(list_of_languages.length)
