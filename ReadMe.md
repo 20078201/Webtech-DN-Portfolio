@@ -27,5 +27,9 @@ inspirations are shown below:
 - Site Name: https://www.codegrepper.com/code-examples/javascript/round+of+2+decimal+places+in+javascript
 - Site Name: https://www.geeksforgeeks.org/how-to-calculate-days-left-until-next-christmas-using-javascript/
 - Site Name: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+- Site Name: https://www.tutorialspoint.com/how-to-convert-a-string-into-integer-in-javascript
+- Site Name: 
+- Site Name: 
+- Site Name: 
 - Site Name: 
 - Site Name: 
