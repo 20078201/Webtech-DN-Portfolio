@@ -28,7 +28,10 @@ inspirations are shown below:
 - Site Name: https://www.geeksforgeeks.org/how-to-calculate-days-left-until-next-christmas-using-javascript/
 - Site Name: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 - Site Name: https://www.tutorialspoint.com/how-to-convert-a-string-into-integer-in-javascript
-- Site Name: 
+- Site Name: https://unsplash.com/photos/ys8qztLjJyg
+- Site Name: https://www.youtube.com/watch?v=YeFzkC2awTM
+- Site Name: https://unsplash.com/photos/ViEBSoZH6M4
+- Site Name: https://unsplash.com/photos/gWzmrNBd17E
 - Site Name: 
 - Site Name: 
 - Site Name: 
