@@ -97,28 +97,31 @@ picture {
 }
 /* ----------------------------------------------- navbar end ------------------------------------------------*/
 
+/* ------------------------------------- main grid creation starts here ------------------------------------*/
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    grid-template-areas:
+    "main-1 main-2";
+}
+
+/* ----------------------------------- main grid creation ends here --------------------------------------- */
 
 /* --------------------------------------------- main content begins ---------------------------------------- */
 .footer {grid-area: footer;}
 .nav-bar {grid-area: nav;}
-.main-content {
-    grid-area: main;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.main-content {grid-area: main;}
 
 .card {
-    width: 50%;
-    /*overflow: hidden;*/
-    position: relative;
-
+    width: 75%;
+    margin: auto;
 }
 
 .card_header {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    padding: 1rem;
+    height: 10vh;
     font-size: 2rem;
     color: #cccccc;
     display: flex;
@@ -128,11 +131,10 @@ picture {
 .card_content {
     background-color: rgba(23, 0, 11, 0.5);
     width: 100%;
+    min-height: 35vh;
     padding: 1rem;
     color: antiquewhite;
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
 }
 
 .card_footer {
@@ -141,11 +143,24 @@ picture {
     font-size: 1.5rem;
     padding: 1rem;
     color: #cccccc;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
 }
 
+.quantity{
+    width: 5rem;
+}
 
+.cart-row{
+    display: flex;
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 
 /* --------------------------------------------- main content Ends ---------------------------------------- */
 
@@ -156,8 +171,6 @@ picture {
 
 .footer-nav {
     flex-grow: 1;
-    height: 100%;
-    /*background: yellow;*/
 }
 
 .footer-nav-links {

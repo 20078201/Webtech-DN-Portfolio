@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/css-reset-Normalise.css">
     <link rel="stylesheet" href="/assets/css/demo-03.css">
 
-    <script src="/assets/js/demo-01.js" defer></script>
+    <script src="/assets/js/demo-03.js" defer></script>
     <title>Time Table</title>
 </head>
 <body>
@@ -30,9 +30,76 @@
     <!-- Main Section -->
     <main class="main-content">
         <div class="card">
-            <header class="card_header"></header>
-            <div id="card_content" class="card_content"></div>
-            <footer class="card_footer"></footer>
+            <header class="card_header">
+                <h4>Cart</h4>
+            </header>
+            <!-- Main content in card section -->
+            <div class="cart card_content">
+                <div class="cart-row cart-headers">
+                    <span class="cart-item cart-column">Product Name</span>
+                    <span class="cart-price cart-column">Price</span>
+                    <span class="cart-quantity cart-column">Quantity</span>
+                </div>
+
+                <div class="cart-items">
+
+                </div>
+
+            </div>
+            <!-- ----Ends Here-------   -->
+            <footer class="card_footer">
+                <h4 class="cart-total">Total: $xx.xx</h4>
+                <div class="cart-btns">
+                    <button id="clear-btn" class="clear-cart-btn">Clear Cart</button>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </footer>
+        </div>
+
+        <div class="card">
+            <header class="card_header">
+                <h4>Select Product</h4>
+            </header>
+            <div class="card_content">
+                <div class="products">
+                    <div class="product">
+                        <span class="product-title">Product 1</span>
+                        <div class="product-details">
+                            <span class="product-price">$1.00</span>
+                            <button type="button" class="add-to-cart-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <span class="product-title">Product 2</span>
+                        <div class="product-details">
+                            <span class="product-price">$15.30</span>
+                            <button type="button" class="add-to-cart-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <span class="product-title">Product 3</span>
+                        <div class="product-details">
+                            <span class="product-price">$5.45</span>
+                            <button type="button" class="add-to-cart-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <span class="product-title">Product 4</span>
+                        <div class="product-details">
+                            <span class="product-price">$6.05</span>
+                            <button type="button" class="add-to-cart-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </main>
 
